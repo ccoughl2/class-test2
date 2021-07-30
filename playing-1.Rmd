@@ -15,3 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library(ggplot2)
 ```
 
+```{r}
+data(iris)
+head(iris)
+ggplot(iris, aes(y = Species, x = Sepal.Length))+
+  geom_boxplot()
+```
+
